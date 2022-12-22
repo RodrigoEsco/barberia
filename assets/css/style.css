@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navegador{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center; 
+    
+}
+.logo  {
+    width: 100px;
+}
+
+.fa-bars{
+    color: aliceblue;
+    font-size: 40px;
+    display: none;
+}
+.navegador > ul{
+    list-style-type: none;
+    display: flex;
+    
+   
+}
+
+.navegador > ul > li {
+    position: relative;
+}
+
+.navegador > ul > li > a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color:aliceblue;
+
+}
+
+.navegador > ul > li:hover ul{
+    display: block;
+}
+
+.navegador > ul > li > ul {
+
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    background-color: rgb(0, 0, 0) ;
+}
+
+.navegador > ul > li > ul > li >a{
+
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    color:aliceblue;
+}
+
+
+.encabezado{
+    background-image:url(/assets/img/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 1100px;
+    background-position: center;
+    width: 100%;
+    height:1100px;
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    padding-right: 100px;
+
+    
+
+}
+
+.encabezado-info{
+    color: rgb(255, 255, 255);
+    width: 200px;  
+    margin-left: 100px;
+    
+}
+
+.btn {
+    
+    margin-top: 10px;
+    padding: 5px 25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    width: 105px;
+}
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+.piePagina{
+    
+    display: flex;
+    padding: 20px  300px;
+    justify-content: space-between;
+    
+}
+footer ul{
+    list-style-type: none;
+    padding: 8px 0px;
+}
+
+footer ul li{
+    padding: 3px;
+}
+
+.derechoReservado{
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.titulo {
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);;
+}
+
+.cortes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contenedor img{
+
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+
+}
+
+.contenedor{
+    padding: 5px;
+    width: 250px; 
+    height: 400px;
+    margin: 10px;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.contenedor h3{
+    text-align: center;
+    padding: 10px;
+}
+.contenedor p{
+    text-align: center;
+    padding: 10px;
+}
+
+.parrafo{
+    text-align: center;
+    font-size: 20px;
+    width: 800px;
+    display: block;
+   margin-bottom: 100px;
+}
+.nosotros{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+
+form .btn {
+    margin-left: 45px;
+}
+.contacto{  
+    margin-bottom: 100px;
+    justify-content: center; 
+    
+}
+
+.contacto > label{
+    display: block;
+    margin: 20px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+
+}
+.map{
+    display: block;
+    padding: 50px;
+    
+
+}
+.degrades{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 150px 450px ;
+    justify-items: center; 
+}
+
+.degrades h1{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    align-self: center;
+    text-align: center;
+    
+}
+.centrar{  
+    margin: 60px;
+    text-align: center;
+    background-color: rgb(224, 2, 176);
+}
+
+@media(max-width:1080px){
+    .degrades{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 150px 450px ;
+        justify-items: center; 
+    }
